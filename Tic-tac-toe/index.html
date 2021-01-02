@@ -1,29 +1,47 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
-    <title>Tic-Toe game</title>
 </head>
 <body>
-    <div class="container" id="board">
-        <h1>Tic Tac Toe</h1>
+    <div class="container">
         <div class="row">
-            <div class="top-left"></div>
-            <div class="top-middle"></div>
-            <div class="top-right"></div>
+            <h1>Tic Tac Toe</h1>
         </div>
         <div class="row">
-            <div class="middle-left"></div>
-            <div class="center"></div>
-            <div class="middle-right"></div>
+        <h2 id=turnMessage>
+
+        </h2>
+        </div>
+    
+    <div id="board">
+        <div class="row">
+            <div class="top left square"></div>
+            <div class="top middle square"></div>
+            <div class="top right square"></div>
         </div>
         <div class="row">
-            <div class="bottom-left"></div>
-            <div class="bottom-middle"></div>
-            <div class="bottom-right"></div>
+            <div class="middle left square"></div>
+            <div class="center square"></div>
+            <div class="middle right square"></div>
+        </div>
+        <div class="row">
+            <div class="bottom left square"></div>
+            <div class="bottom middle square"></div>
+            <div class="bottom right square"></div>
         </div>
     </div>
+    <div class="row">
+        <p id="result" >  </p>
+    </div>
+    <div class="row">
+        <button id="refreshbtn" > Play Again </button>
+    </div>
+    </div>
+    <script src="app.js" type="application/javascript"></script>
 </body>
 </html>
